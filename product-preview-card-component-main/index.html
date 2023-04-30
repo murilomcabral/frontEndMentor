@@ -10,27 +10,111 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+    
+    .attribution { position: fixed; inset: auto auto 10px 10px; font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --pri-color-1: hsl(158, 36%, 37%);
+      --pri-color-2: hsl(30, 38%, 92%);
+      --sec-color-1: hsl(212, 21%, 14%);
+      --sec-color-2: hsl(228, 12%, 48%);
+      --sec-color-3: hsl(0, 0%, 100%);
+      --montserrat-font: 'Montserrat', sans-serif;
+      --fraunces-font: 'Fraunces', serif;
+    }
+
+    body {
+      background-color: var(--pri-color-2);
+      height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+
+    .product-card {
+      background-color: var(--sec-color-3);
+      width: 250px;
+      height: 400px;
+      overflow: hidden;
+      display: flex;
+      flex-flow: row wrap;
+      border-radius: 10px;
+    }
+
+    .product-card p {
+      color: var(--sec-color-2);
+      font-family: var(--montserrat-font);
+      font-size: 14px;
+    }
+
+    .product-img-container {
+      width: 100%;
+      height: 40%;
+      background-color: blueviolet;
+      overflow: hidden;
+    }
+
+    .product-img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 10px;
+    }
+
+    .product-info > * {
+      margin: 5px auto;
+    }
+
+    .product-info > p:first-child {
+      text-transform: uppercase;
+    }
+
+    .product-category {
+      letter-spacing: .2rem;
+    }
+
+    h2 {
+      font-family: var(--fraunces-font);
+      color: var(--sec-color-1);
+    }
+
+    p.price-tag{
+      font-family: var(--fraunces-font);
+      color: var(--pri-color-1);
+    }
+
+    p.price-tag span{
+      font-family: var(--montserrat-font);
+      text-decoration: line-through;
+    }
+
   </style>
 </head>
 <body>
 
-  Preview
-
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart
+  <div class="product-card">
+    <div class="product-img-container">
+      <img src="images/image-product-desktop.jpg" alt="Gabrielle Essence Eau De Parfum">
+    </div>
+    <div class="product-info">
+      <p class="product-category">Perfume</p>
+      <h2>Gabrielle Essence Eau De Parfum</h2>
+      <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+      <p class="price-tag">$149.99<span>$169.99</span></p>
+      <div class="add-to-cart-btt"><p><img src="images/icon-cart.svg" alt="icon-cart">Add to Cart</p></div>
+    </div> 
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/murilomcabral">Murilo Moraes Cabral</a>.
   </div>
 </body>
 </html>

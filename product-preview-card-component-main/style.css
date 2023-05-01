@@ -2,9 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
 
-@media screen and (max-width: 800px) {
-  body {
-    background-color: red;
+@media screen and (min-width: 376px) {
+  div.product-card {
+    width: 500px;
+    flex-flow: row;
+  }
+
+  img.product-img-container {
+    background-color: blueviolet;
+    object-fit: cover;
   }
 }
 
@@ -35,7 +41,7 @@ body {
 
 .product-card {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
 
   width: 300px;
   overflow: hidden;

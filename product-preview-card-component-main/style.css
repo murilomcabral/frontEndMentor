@@ -9,7 +9,6 @@
   }
 
   img.product-img-container {
-    background-color: blueviolet;
     object-fit: cover;
   }
 }
@@ -69,7 +68,6 @@ p {
 }
 
 .product-img-container {
-  background-color: blueviolet;
   overflow: hidden;
 }
 

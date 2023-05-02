@@ -4,14 +4,12 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ## Table of contents
 
-- [Frontend Mentor - Product preview card component solution](#frontend-mentor---product-preview-card-component-solution)
-  - [Table of contents](#table-of-contents)
-  - [Overview](#overview)
-    - [The challenge](#the-challenge)
-    - [Links](#links)
-    - [Built with](#built-with)
-    - [What I learned](#what-i-learned)
-  - [Author](#author)
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Links](#links)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
 
 ## Overview
 
@@ -30,8 +28,8 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
-- Mobile-first workflow
+  - Flexbox
+  - Mobile-first workflow
 
 ### What I learned
 
@@ -43,3 +41,7 @@ Specificity was one of the things that would cause me problems if I haven't do i
 
 - Github - [Murilo Moraes Cabral](https://github.com/murilomcabral)
 - Frontend Mentor - [@murilomcabral](https://www.frontendmentor.io/profile/murilomcabral)
+<br><br>
+---
+
+< [Back to Table of contents](#table-of-contents)

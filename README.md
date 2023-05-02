@@ -1,6 +1,6 @@
 # This is all my Frontend Mentor Challenges Repo.
 
-Thank you for visiting!
+**Thanks for visiting!**
 
 <p>Hi! My name is Murilo. Thank you for taking a time to visite my page!</p>
 
@@ -11,5 +11,6 @@ Thank you for visiting!
 ---
 ## Challenges
 
-1. [Product Preview Card Component](https://murilomcabral.github.io/frontendmentor/product-preview-card-component-main/)
-2. Comming up...
+1. [Product preview card component](https://murilomcabral.github.io/frontendmentor/product-preview-card-component-main/)
+   - [Overview](https://github.com/murilomcabral/frontendmentor/tree/main/product-preview-card-component-main)
+2. Coming up...

@@ -6,7 +6,6 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)

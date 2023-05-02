@@ -4,9 +4,125 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+    @media screen and (min-width: 500px) {
+      div.product-card {
+        width: 500px;
+        flex-flow: row;
+      }
+
+      .product-img-container {
+        width: 900px;
+        object-fit: cover;
+      }
+
+    }
+
+    .attribution { position: fixed; inset: auto auto 10px 10px; font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --pri-color-1: hsl(158, 36%, 37%);
+      --pri-color-2: hsl(30, 38%, 92%);
+      --sec-color-1: hsl(212, 21%, 14%);
+      --sec-color-2: hsl(228, 12%, 48%);
+      --sec-color-3: hsl(0, 0%, 100%);
+      --montserrat-font: 'Montserrat', sans-serif;
+      --fraunces-font: 'Fraunces', serif;
+      --paragraph-font-size: 14px;
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      
+      height: 100vh;
+
+      background-color: var(--pri-color-2);
+    }
+
+    .product-card {
+      display: flex;
+      flex-direction: column;
+
+      width: 300px;
+      overflow: hidden;
+      border-radius: 10px;
+
+      background-color: var(--sec-color-3);
+    }
+
+    .product-category, s, p {
+      font-family: var(--montserrat-font);
+      color: var(--sec-color-2);
+    }
+
+    .product-category, s {
+      font-size: calc(var(--paragraph-font-size) - 3px);
+    }
+
+    .product-category {
+      letter-spacing: .2rem;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: calc(var(--paragraph-font-size));
+    }
+
+    .product-img-container {
+      overflow: hidden;
+    }
+
+    .product-info {
+      display: flex;
+      flex-flow: column;
+      gap: 10px;
+
+      padding: 20px;
+    }
+
+    h2 {
+      font-family: var(--fraunces-font);
+      color: var(--sec-color-1);
+    }
+
+    .price-tag {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      font-family: var(--fraunces-font);
+      font-size: 1.5rem;
+      color: var(--pri-color-1);
+    }
+
+    .add-to-cart-btt {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      height: 40px;
+      border-radius: 7px;
+
+      font-family: var(--montserrat-font);
+      font-size: var(--paragraph-font-size);
+      background-color: var(--pri-color-1);
+      color: var(--sec-color-3);
+      cursor: pointer;
+    }
+
+    .add-to-cart-btt:hover {
+      filter: brightness(.9);
+      transition: filter 200ms;
+    }
+  </style>
   <title>Front end Mentor | Product preview card component</title>
-  <!-- - Mobile: 375px | - Desktop: 1440px -->
 </head>
 <body>
   <div class="product-card">

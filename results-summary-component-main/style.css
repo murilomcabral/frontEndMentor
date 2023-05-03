@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+.attribution { position: fixed; inset: auto auto 10px 10px; font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+@media screen and (min-width: 500px) {
+  div.product-card {
+    width: 500px;
+    flex-flow: row;
+  }
+
+  .product-img-container {
+    width: 900px;
+    object-fit: cover;
+  }
+
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+
+  --primary-1: hsl(0, 100%, 67%);
+  --primary-2: hsl(39, 100%, 56%);
+  --primary-3: hsl(166, 100%, 37%);
+  --primary-4: hsl(234, 85%, 45%);
+
+  --gradient-11: hsl(252, 100%, 67%);
+  --gradient-12: hsl(241, 81%, 54%);
+  --gradient-21: hsla(256, 72%, 46%, 1);
+  --gradient-22: hsla(241, 72%, 46%, 0);
+  
+  --neutral-1: hsl(0, 0%, 100%);
+  --neutral-2: hsl(221, 100%, 96%);
+  --neutral-3: hsl(241, 100%, 89%);
+  --neutral-4: hsl(224, 30%, 27%);
+
+  --hakengrotesk-font: 'Hanken Grotesk', sans-serif;
+
+  --paragraph-font-size: 18px;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  
+  height: 100vh;
+
+  background-color: var(--pri-color-2);
+}

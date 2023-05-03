@@ -41,7 +41,7 @@ Specificity was one of the things that would cause me problems if I haven't do i
 
 - Github - [Murilo Moraes Cabral](https://github.com/murilomcabral)
 - Frontend Mentor - [@murilomcabral](https://www.frontendmentor.io/profile/murilomcabral)
-<br><br>
+
 ---
 
 < [Back to Table of contents](#table-of-contents)

@@ -1,22 +1,11 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
 .attribution { position: fixed; inset: auto auto 10px 10px; font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
-
-@media screen and (min-width: 500px) {
-  div.product-card {
-    width: 500px;
-    flex-flow: row;
-  }
-
-  .product-img-container {
-    width: 900px;
-    object-fit: cover;
-  }
-
-}
+@media screen and (min-width: 376px) {}
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -42,11 +31,55 @@
   --paragraph-font-size: 18px;
 }
 
-body {
+main {
   display: grid;
   place-items: center;
   
   height: 100vh;
 
   background-color: var(--pri-color-2);
+}
+
+.card {
+  font-family: var(--hakengrotesk-font);
+  height: 700px;
+}
+
+.result-container, .summary-container {
+  padding: 30px;
+}
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  height: 40%;
+
+  color: var(--neutral-3);
+  align-items: center;
+  text-align: center;
+
+  border-radius: 0 0 30px 30px;
+  background-image: linear-gradient(to bottom, var(--gradient-11), var(--gradient-12));
+}
+
+.final-result {
+  font-size: 5rem;
+  color: var(--neutral-2);
+}
+
+.summary-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: rgb(135, 222, 196);
+}
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: bisque;
+  margin: 5px auto;
 }

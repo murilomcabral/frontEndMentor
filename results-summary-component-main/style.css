@@ -11,10 +11,12 @@
 
 :root {
 
-  --primary-1: hsl(0, 100%, 67%);
-  --primary-2: hsl(39, 100%, 56%);
-  --primary-3: hsl(166, 100%, 37%);
-  --primary-4: hsl(234, 85%, 45%);
+  --primary-1: 0, 100%, 67%;
+  --primary-2: 39, 100%, 56%;
+  --primary-3: 166, 100%, 37%;
+  --primary-4: 234, 85%, 45%;
+  --opacity-1: 1;
+  --opacity-2: 0.07;
 
   --gradient-11: hsl(252, 100%, 67%);
   --gradient-12: hsl(241, 81%, 54%);
@@ -38,10 +40,10 @@ main {
   height: 100vh;
 
   background-color: var(--pri-color-2);
+  font-family: var(--hakengrotesk-font);
 }
 
 .card {
-  font-family: var(--hakengrotesk-font);
   height: 700px;
 }
 
@@ -53,9 +55,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 20px;
   
-  height: 40%;
-
   color: var(--neutral-3);
   align-items: center;
   text-align: center;
@@ -64,16 +65,39 @@ main {
   background-image: linear-gradient(to bottom, var(--gradient-11), var(--gradient-12));
 }
 
+.result-container :nth-child(2) {
+  height: 135px;
+  aspect-ratio: 1;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  border-radius: 50%;
+  background-image: linear-gradient(to bottom, var(--gradient-21), var(--gradient-22));
+}
+
+h1 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.final-result, h2 {
+  color: var(--neutral-1);
+}
+
 .final-result {
-  font-size: 5rem;
-  color: var(--neutral-2);
+  flex-direction: column;
+  font-size: 3rem;
+  font-weight: 800;
 }
 
 .summary-container {
   display: flex;
   width: 100%;
   flex-direction: column;
-  background-color: rgb(135, 222, 196);
+  /* background-color: rgb(135, 222, 196); */
 }
 
 .categories {
@@ -81,5 +105,36 @@ main {
   justify-content: space-between;
   width: 100%;
   background-color: bisque;
+  padding: 15px;
   margin: 5px auto;
+  border-radius: 10px;
+}
+
+.summary-container > div:nth-of-type(1) {
+  color: hsl(var(--primary-1));
+  background-color: hsla(var(--primary-1), var(--opacity-2));
+}
+
+.summary-container > div:nth-of-type(2) {
+  color: hsl(var(--primary-2));
+  background-color: hsla(var(--primary-2), var(--opacity-2));
+}
+
+.summary-container > div:nth-of-type(3) {
+  color: hsl(var(--primary-3));
+  background-color: hsla(var(--primary-3), var(--opacity-2));
+}
+
+.summary-container > div:nth-of-type(4) {
+  color: hsl(var(--primary-4));
+  background-color: hsla(var(--primary-4), var(--opacity-2));
+}
+
+.categories > :nth-child(2) {
+  font-weight: 700;
+  color: var(--neutral-4);
+}
+
+.categories > :nth-child(2) > :nth-child(2) {
+  opacity: 0.5;
 }

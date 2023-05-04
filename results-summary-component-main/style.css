@@ -37,7 +37,7 @@ main {
   display: flex;
   justify-content: center;
   
-  height: 100vh;
+  height: 100dvh;
 
   background-color: var(--pri-color-2);
   font-family: var(--hakengrotesk-font);

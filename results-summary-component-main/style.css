@@ -5,7 +5,17 @@
 .attribution { position: fixed; inset: auto auto 10px 10px; font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-@media screen and (min-width: 376px) {}
+@media screen and (min-width: 500px) {
+  
+  main {
+    align-items: center;
+  }
+
+  .card {
+    display: flex;
+    max-height: 400px;
+  }
+}
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -44,11 +54,11 @@ main {
 }
 
 .card {
-  height: 700px;
+  max-height: 700px;
 }
 
 .result-container, .summary-container {
-  padding: 30px;
+  padding: 10px 30px;
 }
 
 .result-container {
@@ -78,13 +88,17 @@ main {
   background-image: linear-gradient(to bottom, var(--gradient-21), var(--gradient-22));
 }
 
-h1 {
-  font-size: 1.25rem;
+.card h1 {
+  font-size: 1.1rem;
   font-weight: 500;
 }
 
 .final-result, h2 {
   color: var(--neutral-1);
+}
+
+.summary-container h3, .continue-btt {
+  margin: 15px 0;
 }
 
 .final-result {
@@ -107,6 +121,11 @@ h1 {
   background-color: bisque;
   padding: 15px;
   border-radius: 10px;
+}
+
+.categories > div:first-child {
+  display: flex;
+  gap: 10px;
 }
 
 .summary-container > div:nth-of-type(1) {

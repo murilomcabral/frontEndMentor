@@ -15,7 +15,9 @@
     display: flex;
     border-radius: 30px;
     max-height: 400px;
+    max-width: 600px;
     box-shadow: 0 0 50px hsla(var(--gradient-12), .5);
+    border-radius: 30px;
   }
 }
 
@@ -56,10 +58,15 @@ main {
 }
 
 .card {
-  max-height: 700px;
+  max-height: fit-content;
+  overflow: hidden;
 }
 
-.result-container, .summary-container {
+.result-container {
+  padding: 40px 30px;
+}
+
+.summary-container {
   padding: 10px 30px;
 }
 
@@ -68,12 +75,12 @@ main {
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+  border-radius: 0 0 30px 30px;
   
   color: var(--neutral-3);
   align-items: center;
   text-align: center;
 
-  border-radius: 30px;
   background-image: linear-gradient(to bottom, hsl(var(--gradient-11)), hsl(var(--gradient-12)));
 }
 

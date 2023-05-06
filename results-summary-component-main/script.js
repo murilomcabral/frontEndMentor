@@ -14,7 +14,20 @@ async function logJSONData() {
       $summary[i].textContent = data[i].score
       med += data[i].score
     }
-    $finalResult.textContent = Math.floor(med/$summary.length)
+    med = Math.floor(med/$summary.length)
+
+    let startValue = 0;
+    let speed = 500;
+    
+    const interval = speed / med;
+    const counter = setInterval(() => {
+      startValue += 1
+      $finalResult.textContent = startValue
+      if (startValue === med) {
+        clearInterval(counter)
+      }
+    }, interval);
+
   })
   
 }

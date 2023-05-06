@@ -38,7 +38,7 @@ main {
   display: grid;
   place-items: center;
   
-  height: 100vh;
+  min-height: 100dvh;
 
   background-color: var(--pri-color-2);
 }

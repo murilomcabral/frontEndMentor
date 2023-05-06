@@ -1,10 +1,8 @@
 const $finalResult = document.querySelector('.final-result')
-const $scoreRankRange = document.querySelector('.score-rank-range')
 
 const $summary = document.querySelectorAll('.categories .points')
 
 async function logJSONData() {
-
   const response = await fetch('data.json')
   const jsonData = response.json()
 
@@ -27,9 +25,7 @@ async function logJSONData() {
         clearInterval(counter)
       }
     }, interval);
-
   })
-  
 }
 
 logJSONData()

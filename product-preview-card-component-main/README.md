@@ -26,6 +26,7 @@ Users should be able to:
 
 ### Built with
 
+- [VS Code](https://code.visualstudio.com/)
 - Semantic HTML5 markup
 - CSS custom properties
   - Flexbox
@@ -33,9 +34,9 @@ Users should be able to:
 
 ### What I learned
 
-Planning first made me gain time. I didn't do it at first. But at some point I realized that I needed to take a step back and make a plan first.
-
-Specificity was one of the things that would cause me problems if I haven't do it.
+- Planning first
+- CSS specificity
+- Min-Height instead of Height - [Adbul Khalid](https://www.frontendmentor.io/profile/0xAbdulKhalid)'s advice
 
 ## Author
 

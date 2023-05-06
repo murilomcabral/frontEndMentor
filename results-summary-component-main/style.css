@@ -2,10 +2,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
 
-.attribution { position: fixed; inset: auto auto 10px 10px; font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-@media screen and (min-width: 500px) {
+.attribution {position: fixed; inset: 5px 0 auto 0; font-size: 11px; text-align: center; color: white;}
+.attribution a { color: hsla(0, 0%, 100%, .6);}
+
+@media screen and (min-width: 520px) {
+
+  .attribution {inset: auto auto 10px 10px; color: black;}
+  .attribution a { color: hsl(228, 45%, 44%)}
+
   
   main {
     align-items: center;
@@ -19,9 +25,25 @@
     box-shadow: 0 0 50px hsla(var(--gradient-12), .5);
     border-radius: 30px;
   }
+
+  .result-container {
+    border-radius: 30px!important;
+  }
+
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+@media screen and (max-width: 260px) {
+  .categories, .categories > div:first-of-type {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .summary-container {
+    text-align: center;
+    padding: 10px!important;
+  }
+
+}
 
 :root {
 
@@ -50,20 +72,14 @@
 main {
   display: flex;
   justify-content: center;
-  
   height: 100dvh;
-
   background-color: var(--pri-color-2);
   font-family: var(--hakengrotesk-font);
 }
 
 .card {
-  max-height: fit-content;
+  height: fit-content;
   overflow: hidden;
-}
-
-.result-container {
-  padding: 40px 30px;
 }
 
 .summary-container {
@@ -75,13 +91,14 @@ main {
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  border-radius: 0 0 30px 30px;
+  padding: 40px 40px;
   
   color: var(--neutral-3);
   align-items: center;
   text-align: center;
-
+  
   background-image: linear-gradient(to bottom, hsl(var(--gradient-11)), hsl(var(--gradient-12)));
+  border-radius: 0 0 30px 30px;
 }
 
 .result-container :nth-child(2) {

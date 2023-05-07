@@ -1,7 +1,7 @@
 # This is all my Frontend Mentor Challenges Repo.
 [Frontend Mentor Challenges](https://www.frontendmentor.io/challenges?sort=difficulty|asc)
 
-**Thanks for visiting!**
+**Thank you for visiting!**
 
 <p>Hi! My name is Murilo. Thank you for taking a time to visite my page!</p>
 

@@ -20,8 +20,7 @@
   .card {
     display: flex;
     border-radius: 30px;
-    max-height: 400px;
-    max-width: 600px;
+    width: 600px;
     box-shadow: 0 0 50px hsla(var(--gradient-12), .5);
     border-radius: 30px;
   }
@@ -33,6 +32,7 @@
 }
 
 @media screen and (max-width: 260px) {
+
   .categories, .categories > div:first-of-type {
     display: flex;
     flex-direction: column;
@@ -91,7 +91,7 @@ main {
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  padding: 40px 40px;
+  padding: 30px 40px;
   
   color: var(--neutral-3);
   align-items: center;
@@ -192,4 +192,9 @@ main {
   border-radius: 25px;
   background-color: var(--neutral-4);
   color: var(--neutral-1);
+}
+
+.continue-btt:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to bottom, hsl(var(--gradient-11)), hsl(var(--gradient-12)));
 }

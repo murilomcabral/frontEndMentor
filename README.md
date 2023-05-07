@@ -12,8 +12,10 @@
 ---
 ## Challenges
 
-1. [Product preview card component](https://murilomcabral.github.io/frontendmentor/product-preview-card-component-main/)
-   - [Overview](https://github.com/murilomcabral/frontendmentor/tree/main/product-preview-card-component-main)
-2. [Results summary component](https://murilomcabral.github.io/frontendmentor/results-summary-component-main/)
-   - [Overview](https://github.com/murilomcabral/frontendmentor/tree/main/results-summary-component-main)
-3. Continue...
+1. [Product preview card component](https://murilomcabral.github.io/frontendmentor/001-product-preview-card-component-main/)
+   - [Github repo folder](https://github.com/murilomcabral/frontendmentor/tree/main/001-product-preview-card-component-main)
+2. [Results summary component](https://murilomcabral.github.io/frontendmentor/002-results-summary-component-main/)
+   - [Github repo folder](https://github.com/murilomcabral/frontendmentor/tree/main/002-results-summary-component-main)
+3. [QR Code component](https://murilomcabral.github.io/frontendmentor/003-qr-code-component-main/)
+   - [Github repo folder](https://github.com/murilomcabral/frontendmentor/tree/main/002-results-summary-component-main)
+...in progress

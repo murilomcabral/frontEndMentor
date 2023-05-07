@@ -29,3 +29,6 @@ async function logJSONData() {
 }
 
 logJSONData()
+
+let data = FileSystemFileHandle('data.json')
+console.log(data)

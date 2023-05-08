@@ -13,9 +13,7 @@
 ## Challenges
 
 1. [Product preview card component Live Site URL](https://murilomcabral.github.io/frontendmentor/001-product-preview-card-component-main/)
-   - [Github repo folder](https://github.com/murilomcabral/frontendmentor/tree/main/001-product-preview-card-component-main)
 2. [Results summary component Live Site URL](https://murilomcabral.github.io/frontendmentor/002-results-summary-component-main/)
-   - [Github repo folder](https://github.com/murilomcabral/frontendmentor/tree/main/002-results-summary-component-main)
 3. [QR code component Live Site URL](https://murilomcabral.github.io/frontendmentor/003-qr-code-component-main/)
-   - [Github repo folder](https://github.com/murilomcabral/frontendmentor/tree/main/003-qr-code-component-main)
-...in progress
+4. [?](https://murilomcabral.github.io/frontendmentor/?/)
+<br>continue...

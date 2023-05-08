@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Product preview card component](https://murilomcabral.github.io/frontendmentor/product-preview-card-component-main/)
+- Live Site URL: [Product preview card component](https://murilomcabral.github.io/frontendmentor/001-product-preview-card-component-main/)
 
 ### Built with
 

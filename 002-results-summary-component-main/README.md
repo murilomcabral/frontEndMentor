@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Results summary component](https://murilomcabral.github.io/frontendmentor/results-summary-component-main/)
+- Live Site URL: [Results summary component](https://murilomcabral.github.io/frontendmentor/002-results-summary-component-main/)
 
 ### Built with
 

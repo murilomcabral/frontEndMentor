@@ -16,6 +16,7 @@
   --light-gray: hsl(212, 45%, 89%);
   --grayish-blue: hsl(220, 15%, 45%);
   --dark-blue: hsl(218, 44%, 22%);
+  --card-shadow: hsla(220, 15%, 45%,.2);
 
   --main-font: 'Outfit', sans-serif;
 
@@ -38,6 +39,7 @@ main {
   border-radius: 20px;
   text-align: center;
   padding: 20px;
+  box-shadow: 0 0 30px var(--card-shadow);
 }
 
 .card img {

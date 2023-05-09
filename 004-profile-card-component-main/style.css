@@ -4,11 +4,14 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-.attribution {position: fixed; inset: 5px 0 auto 0; font-size: 11px; text-align: center; color: var(--dark-blue);}
+.attribution {position: fixed; inset: 5px 0 auto 0; font-size: 11px; text-align: center; color: white;}
 .attribution a { color: var(--grayish-blue);}
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 600px) {
   .attribution {inset: auto auto 10px 10px}
+  body > img {
+    transform: translate(50%, 50%);
+  }
 }
 
 @media screen and (max-width: 250px) {
@@ -16,7 +19,6 @@
     flex-direction: column;
     gap: 10px;
   }
-
   .account-info > *{
     padding: 10px 0;
   }
@@ -46,6 +48,28 @@ body {
   font-family: var(--main-font);
   font-size: var(--name-and-stats-font-size);
   color: var(--very-dark-desaturated-blue);
+  overflow: hidden;
+}
+
+body > img {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  z-index: -1;
+
+  max-width: 150dvw;
+  transform: translate(50%, 50%);
+}
+
+body > img:nth-of-type(1) {
+  top: 0;
+  left: 0;
+  rotate: 180deg;
+}
+
+body > img:nth-of-type(2) {
+  bottom: 0;
+  right: 0;
 }
 
 h1 {

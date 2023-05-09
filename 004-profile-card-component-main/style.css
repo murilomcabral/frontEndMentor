@@ -11,6 +11,17 @@
   .attribution {inset: auto auto 10px 10px}
 }
 
+@media screen and (max-width: 250px) {
+  .account-interation-details {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .account-info > *{
+    padding: 10px 0;
+  }
+}
+
 :root {
   --dark-cyan: hsl(185, 75%, 39%);
   --very-dark-desaturated-blue: hsl(229, 23%, 23%);
@@ -20,8 +31,10 @@
 
   --card-shadow: hsla(185, 75%, 20%, .20);
 
-  --paragraph-font-size: 18px;
+  --name-and-stats-font-size: 18px;
   --main-font: 'Kumbh Sans', sans-serif;
+
+  --profile-photo-size: 150px;
 }
 
 body {
@@ -31,8 +44,12 @@ body {
   min-height: 100dvh;
   background-color: var(--dark-cyan);
   font-family: var(--main-font);
-  font-size: var(--paragraph-font-size);
+  font-size: var(--name-and-stats-font-size);
   color: var(--very-dark-desaturated-blue);
+}
+
+h1 {
+  font-size: calc(var(--name-and-stats-font-size) * 1.2)
 }
 
 .card {
@@ -48,7 +65,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 48px;
+  margin-bottom: calc(var(--profile-photo-size)/2);
 }
 
 .cover-photo {
@@ -56,6 +73,7 @@ body {
 }
 
 .profile-photo {
+  height: var(--profile-photo-size);
   position: absolute;
   bottom: 0px;
   transform: translatey(50%);
@@ -69,6 +87,18 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+.profile-info > div:first-of-type :nth-child(2) {
+  margin-top: 10px;
+}
+
+.profile-info > div:nth-of-type(1) {
+  padding: 15px;
+}
+
+.profile-info > div:nth-of-type(2) {
+  padding: 15px;
 }
 
 .profile-info p, .age {
@@ -93,7 +123,7 @@ body {
 
 .account-interation-details div :nth-child(2) {
   color: var(--dark-grayish-blue);
-  font-size: 14px;
+  font-size: calc(var(--name-and-stats-font-size) * .7);
   letter-spacing: .1rem;
   margin-top: 5px;
 }

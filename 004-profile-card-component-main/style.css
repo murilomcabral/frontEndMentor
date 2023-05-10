@@ -22,6 +22,10 @@
     right: -100px;
     bottom: 50%;
   }
+
+  .card {
+    min-width: 400px;
+  }
 }
 
 @media screen and (max-width: 250px) {
@@ -85,7 +89,7 @@ h1 {
 .card {
   position: relative;
 
-  max-width: 330px;
+  width: 330px;
   border-radius: 20px;
   overflow: hidden;
   background-color: white;
@@ -101,7 +105,7 @@ h1 {
 }
 
 .cover-photo {
-  height: inherit;
+  min-width: 100%;
 }
 
 .profile-photo {

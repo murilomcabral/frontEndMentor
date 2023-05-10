@@ -19,15 +19,15 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Live Site URL: [QR code component](https://murilomcabral.github.io/frontendmentor/004-profile-card-component-main/)
+- Live Site URL: [Profile card component](https://murilomcabral.github.io/frontendmentor/004-profile-card-component-main/)
 
 ### Built with
 
 - [VS Code](https://code.visualstudio.com/)
 - Semantic HTML5 markup
 - CSS custom properties
-  - Flexbox
   - Mobile-first workflow
+  - Flexbox
 
 ### What I learned
 

@@ -33,8 +33,8 @@ Users should be able to:
 - [VS Code](https://code.visualstudio.com/)
 - Semantic HTML5 markup
 - CSS custom properties
-  - Flexbox
   - Mobile-first workflow
+  - Flexbox
 
 ### What I learned
 

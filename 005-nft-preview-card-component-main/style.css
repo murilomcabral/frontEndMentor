@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@import url();
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+.attribution {position: fixed; inset: 5px 0 auto 0; font-size: 11px; text-align: center; color: var(--attrb-color);}
+.attribution a { color: var(--attrb-color);}
+
+@media screen and (min-width: 601px) {
+  .attribution {inset: auto auto 10px 10px}
+}
+
+:root {
+  --attrb-color: white;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  background-color: var(--dark-cyan);
+  font-family: var(--main-font);
+  font-size: var(--name-and-stats-font-size);
+  color: var(--very-dark-desaturated-blue);
+  overflow: hidden;
+}

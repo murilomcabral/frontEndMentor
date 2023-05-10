@@ -7,6 +7,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 - [Overview](#overview)
   - [Screenshot](#screenshot)
   - [Links](#links)
+  - [What I learned](#what-i-learned)
   - [Built with](#built-with)
 - [Author](#author)
 
@@ -27,6 +28,10 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 - CSS custom properties
   - Flexbox
   - Mobile-first workflow
+
+### What I learned
+
+- How to use position relative, fixed and absolute all together.
 
 ## Author
 

@@ -10,12 +10,17 @@
 @media screen and (min-width: 601px) {
   .attribution {inset: auto auto 10px 10px}
 
-  body [svg1] {
-    left: 45%;
+  [svg-container] [svg1], [svg-container] [svg2] {
+    width: 1200px;
   }
 
-  body [svg2] {
-    right: 45%;
+  [svg-container] [svg1] {
+    left: -100px;
+  }
+
+  [svg-container] [svg2] {
+    right: -100px;
+    bottom: 50%;
   }
 }
 
@@ -55,29 +60,22 @@ body {
   font-size: var(--name-and-stats-font-size);
   color: var(--very-dark-desaturated-blue);
   overflow: hidden;
-
-  position: relative;
 }
 
 [svg-container] {
-  position: absolute;
-  width: 100%;
+  position: fixed;
 }
 
 [svg1], [svg2] {
   position: absolute;
-  width: 1200px;
+  width: 600px;
   z-index: -1;
 }
 
-[svg1] {
-  left: 10%;
-}
-
 [svg2] {
-  right: 10%;
+  right: 0px;
   bottom: 50%;
-  rotate: 180deg;
+  rotate: 110deg;
 }
 
 h1 {

@@ -45,7 +45,7 @@
   
   --dark-gray: hsl(0, 0%, 59%);
 
-  --card-shadow: hsla(185, 75%, 20%, .20);
+  --card-shadow: hsla(185, 75%, 20%, .50);
 
   --name-and-stats-font-size: 18px;
   --main-font: 'Kumbh Sans', sans-serif;
@@ -93,7 +93,7 @@ h1 {
   border-radius: 20px;
   overflow: hidden;
   background-color: white;
-  box-shadow: 0 0 30px var(--card-shadow);
+  box-shadow: 0 30px 30px var(--card-shadow);
 }
 
 .profile-header {

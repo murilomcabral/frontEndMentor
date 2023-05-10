@@ -10,11 +10,13 @@
 @media screen and (min-width: 601px) {
   .attribution {inset: auto auto 10px 10px}
 
-  [svg1], [svg2] {
-    min-width: 50dvw;
-    transform: translate(calc(var(--img-transform) - 150px), calc(var(--img-transform) + 100px))!important;
+  body [svg1] {
+    left: 45%;
   }
 
+  body [svg2] {
+    right: 45%;
+  }
 }
 
 @media screen and (max-width: 250px) {
@@ -53,26 +55,29 @@ body {
   font-size: var(--name-and-stats-font-size);
   color: var(--very-dark-desaturated-blue);
   overflow: hidden;
+
+  position: relative;
+}
+
+[svg-container] {
+  position: absolute;
+  width: 100%;
 }
 
 [svg1], [svg2] {
   position: absolute;
+  width: 1200px;
   z-index: -1;
-
-  width: 600px;
-  
-  transform: translate(calc(var(--img-transform) + 100px), var(--img-transform));
 }
 
 [svg1] {
-  top: 0;
-  left: 0;
-  rotate: 180deg;
+  left: 10%;
 }
 
 [svg2] {
-  bottom: 0;
-  right: 0;
+  right: 10%;
+  bottom: 50%;
+  rotate: 180deg;
 }
 
 h1 {

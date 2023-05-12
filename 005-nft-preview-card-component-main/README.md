@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](profile-card-component-solution.png)
+![](nft-preview-card-component-solution.png)
 
 ### Links
 
@@ -35,10 +35,13 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
   - Mobile-first workflow
+  - Grid
+  - Flex
 
 ### What I learned
 
-- ?
+- Better overlay on hover
+- Better align image within a container
 
 ## Author
 

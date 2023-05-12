@@ -63,6 +63,7 @@ body {
   font-family: var(--main-font);
   font-size: var(--name-and-stats-font-size);
   color: var(--very-dark-desaturated-blue);
+  padding: 30px;
 }
 
 [svg-container] {

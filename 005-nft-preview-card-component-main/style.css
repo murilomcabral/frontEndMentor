@@ -9,8 +9,9 @@
 
 @media screen and (min-width: 601px) {
   .attribution {inset: auto auto 10px 10px}
-  .card {
-    scale: 1.1;
+  section.card {
+    min-width: 350px;
+    min-height: 595px;
   }
 }
 
@@ -48,9 +49,9 @@ body {
   background-color: var(--card-bg);
   font-size: var(--font-size);
 
-  width: 360px;
+  width: 325px;
   max-width: 80dvw;
-  min-height: 580px;
+  min-height: 542px;
 
   padding: 25px;
   
@@ -60,7 +61,7 @@ body {
   
   border-radius: 15px;
   box-shadow: 0 20px 30px var(--card-drop-shadow);
-  transition: scale 150ms;
+  transition: all 150ms;
 }
 
 .nft-img-container {

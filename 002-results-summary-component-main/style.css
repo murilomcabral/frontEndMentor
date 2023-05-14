@@ -7,26 +7,68 @@
 .attribution {position: fixed; inset: 5px 0 auto 0; font-size: 11px; text-align: center; color: white;}
 .attribution a { color: hsla(0, 0%, 100%, .6);}
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 735px) {
 
   .attribution {inset: auto auto 10px 10px; color: black;}
   .attribution a { color: hsl(228, 45%, 44%)}
 
-  
   main {
     align-items: center;
   }
 
-  .card {
+  main .card {
     display: flex;
     border-radius: 30px;
-    width: 600px;
+    width: 735px;
+    height: 510px;
     box-shadow: 0 0 50px hsla(var(--gradient-12), .15);
     border-radius: 30px;
   }
 
-  .result-container {
-    border-radius: 30px!important;
+  .card .result-container {
+    min-width: 50%;
+    border-radius: 30px;
+    justify-content: space-between;
+    padding: 40px;
+  }
+
+  .card .result-container h1 {
+    font-size: 26px;
+  }
+
+  .card .result-container div {
+    min-width: 200px;
+    min-height: 200px;
+    font-size: 18px;
+  }
+
+  .card .result-container h2 {
+    font-size: 32px;
+  }
+
+  .card .result-container p {
+    font-size: 18px;
+    padding: 0 20px;
+  }
+
+  .card .result-container .final-result {
+    font-size: 72px;
+  }
+
+  .card .summary-container {
+    padding: 26px 40px;
+    justify-content: space-between;
+    font-size: 18px;
+  }
+
+  .summary-container h3 {
+    font-size: 26px;
+    margin: 0;
+  }
+
+  .summary-container .categories {
+    height: 60px;
+    align-items: center;
   }
 
 }
@@ -40,7 +82,7 @@
 
   .summary-container {
     text-align: center;
-    padding: 10px!important;
+    padding: 10px;
   }
 
 }
@@ -194,4 +236,18 @@ main {
 .continue-btt:hover {
   cursor: pointer;
   background-image: linear-gradient(to bottom, hsl(var(--gradient-11)), hsl(var(--gradient-12)));
+}
+
+/* design overlay */
+body {
+  display: grid;
+  place-items: center;
+}
+
+.design-overlay {
+  display: none;
+  position: fixed;
+  margin: auto;
+  inset: 0 auto;
+  opacity: 1;
 }

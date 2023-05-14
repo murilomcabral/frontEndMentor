@@ -58,7 +58,7 @@ body {
   place-items: center;
   
   min-height: 100dvh;
-  padding: 25px;
+  padding: 20px 0px;
 
   background-color: var(--pri-color-2);
 }

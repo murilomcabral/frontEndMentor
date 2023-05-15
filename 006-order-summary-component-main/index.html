@@ -2,36 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Order summary card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <meta
+  name="description"
+  content="Murilo's 6th challenge from Frontend Mentor.">
+  <link rel="stylesheet" href="style.css">  
+  <title>Frontend Mentor | Order summary card</title>
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
+  <picture>
+      <source srcset="images/pattern-background-mobile.svg" media="(max-width: 500px)">
+      <img src="images/pattern-background-desktop.svg" alt="">
+  </picture>
+  <div class="card">
+    <img src="images/illustration-hero.svg" alt="">
+    <div class="order-summary-info">
+      <div class="about-the-order">
+        <h2>Order Summary</h2>
+        <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+      </div>
+      <div class="plan-pricing">
+        <div>
+          <img src="images/icon-music.svg" alt="">
+          <div>
+            <div class="plan-type">Annual Plan</div><div>$59.99/year</div>
+          </div>
+        </div>
+        <a href="#">Change</a>
+      </div>
+      <div class="payment-order">
+        <div class="proceed-to-payment-btt">Proceed to Payment</div>
+        <div class="cancel-order">Cancel Order</div>
+      </div>
+    </div>
+  </div>
   
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/murilomcabral" target="_blank">Murilo Moraes Cabral</a>.
   </div>
 </body>
 </html>

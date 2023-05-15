@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+.attribution {position: fixed; inset: auto auto 10px 10px; font-size: 11px; text-align: center; color: var(--attrb-color);}
+.attribution a { color: var(--attrb-color);}
+
+@media screen and (max-width: 500px) {
+  .attribution {inset: 10px 0 auto 0}
+  
+  html body {
+    padding: 25px 5px 5px;
+  }
+
+  body .card {
+    width: 327px;
+    height: min-content;
+    min-height: 570px;
+    max-width: 90dvw;
+    /* opacity: 0; */
+  }
+
+  .card .order-summary-info {
+    padding: 35px 25px;
+    max-width: 95%;
+  }
+
+  .order-summary-info .about-the-order > h2 {
+    font-size: 1.4rem;
+  }
+
+  .order-summary-info .about-the-order > p {
+    font-size: .94rem;
+    padding: 0 10px;
+  }
+
+  .order-summary-info .plan-pricing > div:first-of-type {
+    gap: 15px;
+  }
+  
+  .order-summary-info .plan-pricing {
+    font-size: .94rem;
+    padding: 15px;
+    height: 80px;
+    flex-wrap: wrap;
+  }
+
+}
+
+:root {
+  --attrb-color: --dark-blue;
+
+/* primary colors */
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+/* neutral colors */
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+
+  --card-shadow: 223, 47%, 23%;
+  --btt-shadow: 245, 75%, 52%;
+
+  --font-red-hat-display: 'Red Hat Display', sans-serif;
+  --p-font-size: 16px;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100dvh;
+  background-color: var(--pale-blue);
+  font-family: var(--font-red-hat-display);
+  padding: 5px;
+  /* overflow-x: hidden; */
+}
+
+picture {
+  position: absolute;
+  width: 100dvw;
+  top: 0;
+  z-index: -1;
+}
+
+picture > img {
+  width: inherit;
+}
+
+.card {
+  width: 450px;
+  height: 700px;
+  border-radius: 20px;
+  background-color: white;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: min-content;
+  box-shadow: 0 20px 25px -10px hsla(var(--card-shadow), .2);
+}
+
+.card img {
+  width: 100%;
+}
+
+.order-summary-info {
+  --pad: 48px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding: 46px var(--pad) 50px var(--pad);
+}
+
+.about-the-order > h2 {
+  color: var(--dark-blue);
+  font-weight: 900;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.about-the-order > p {
+  color: var(--desaturated-blue);
+  font-size: var(--p-font-size);
+  line-height: 1.65rem;
+}
+
+.plan-pricing {
+  background-color: var(--very-pale-blue);
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.plan-pricing > div:first-of-type {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  aspect-ratio: 1;
+  height: 100%;
+}
+
+.plan-pricing > div div {
+  color: var(--desaturated-blue);
+  width: max-content;
+}
+
+.plan-pricing .plan-type {
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+
+.plan-pricing a {
+  color: var(--bright-blue);
+  font-weight: 700;
+  font-size: .9rem;
+}
+
+.proceed-to-payment-btt {
+  height: 50px;
+  background-color: var(--bright-blue);
+  color: var(--very-pale-blue);
+  margin-bottom: 32px;
+  border-radius: 10px;
+  text-align: center;
+  display: grid;
+  place-content: center;
+  box-shadow: 0 10px 20px 5px hsla(var(--btt-shadow), .25);
+}
+
+.cancel-order {
+  color: var(--desaturated-blue);
+  font-weight: 700;
+  font-size: .95rem;
+}

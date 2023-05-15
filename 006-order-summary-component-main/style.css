@@ -7,11 +7,12 @@
 .attribution {position: fixed; inset: auto auto 10px 10px; font-size: 11px; text-align: center; color: var(--attrb-color);}
 .attribution a { color: var(--attrb-color);}
 
-@media screen and (max-width: 500px) {
+@media screen and (max-height: 720px), screen and (max-width: 500px) {
   .attribution {inset: 10px 0 auto 0}
   
   html body {
     padding: 25px 5px 5px;
+    overflow-x: hidden;
   }
 
   body .card {
@@ -170,11 +171,30 @@ picture > img {
   text-align: center;
   display: grid;
   place-content: center;
-  box-shadow: 0 10px 20px 5px hsla(var(--btt-shadow), .25);
+  box-shadow: 0 10px 20px 5px hsla(var(--btt-shadow), .1);
 }
 
 .cancel-order {
   color: var(--desaturated-blue);
   font-weight: 700;
   font-size: .95rem;
+}
+
+/* active states */
+.proceed-to-payment-btt:hover, .cancel-order:hover {
+  cursor: pointer;
+}
+
+.proceed-to-payment-btt:hover {
+  opacity: .6;
+  box-shadow: none;
+}
+
+.cancel-order:hover {
+  color: var(--dark-blue);
+}
+
+.plan-pricing a:hover {
+  opacity: .6;
+  text-decoration: none;
 }

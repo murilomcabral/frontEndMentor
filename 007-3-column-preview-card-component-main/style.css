@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+.attribution {position: fixed; inset: auto auto 10px 10px; font-size: 11px; text-align: center; color: var(--attrb-color);}
+.attribution a { color: var(--attrb-color);}
+
+:root {
+  --attrb-color: --dark-blue;
+
+/* primary colors */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+/* neutral colors */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+
+  --font-big-shoulders: 'Big Shoulders Display', cursive;
+  --font-lexend: 'Lexend Deca', sans-serif;
+  --font-size: 15px;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100dvh;
+
+  /* preview design */
+  background-image: url(design/desktop-design.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section {
+  margin-top: 40px;
+  display: grid;
+  width: 920px;
+  grid-template-columns: repeat(3,1fr);
+  background-color: rgba(255, 0, 0, .2);
+  min-height: 500px;
+}
+
+.card {
+  padding: 48px;
+}
+
+
+@media screen and (max-height: 720px), screen and (max-width: 500px) {
+  .attribution {inset: 10px 0 auto 0}
+}

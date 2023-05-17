@@ -9,6 +9,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
   - [Screenshot](#screenshot)
   - [Links](#links)
   - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
 - [Author](#author)
 
 ## Overview
@@ -36,6 +37,10 @@ Users should be able to:
   - Desktop-first workflow
   - Grid
   - Flex
+
+### What I learned
+
+- Better grid control
 
 ## Author
 

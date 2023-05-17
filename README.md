@@ -18,4 +18,5 @@
 4. [Profile card component Live Site URL](https://murilomcabral.github.io/frontendmentor/004-profile-card-component-main/)
 5. [NFT preview card component Live Site URL](https://murilomcabral.github.io/frontendmentor/005-nft-preview-card-component-main/)
 6. [Order summary component Live Site URL](https://murilomcabral.github.io/frontendmentor/006-order-summary-component-main/)
+7. [3 column preview card component Live Site URL](https://murilomcabral.github.io/frontendmentor/007-3-column-preview-card-component-main/)
 <br>continue...

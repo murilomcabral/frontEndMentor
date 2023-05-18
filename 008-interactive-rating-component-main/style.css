@@ -136,3 +136,8 @@ button[type="submit"]:hover {
 @media screen and (max-height: 620px), screen and (max-width: 745px) {
   .attribution {inset: 10px 0 auto 0; backdrop-filter: blur(3px)}
 }
+
+li[checked] {
+  color: var(--white);
+  background-color: var(--orange);
+}

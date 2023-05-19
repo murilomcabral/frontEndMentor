@@ -32,10 +32,8 @@ function thankYouState() {
 }
 
 // svg animation
-
 const linePath = document.querySelector('.svg-line path')
 const pathLen = linePath.getTotalLength()
-console.log(pathLen)
 linePath.style.cssText = `
 fill:none;
 stroke:#e6e6e6;

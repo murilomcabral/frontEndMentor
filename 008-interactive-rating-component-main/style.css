@@ -78,7 +78,7 @@ body::before {
   margin-bottom: 10px;
 }
 
-.thank-you-state div:first-of-type {
+.thank-you-state div:nth-last-of-type(2) {
   color: var(--orange);
   padding: 5px 20px;
   background-color: var(--dark-blue);
@@ -160,6 +160,35 @@ li[checked] {
 
 .thank-you-state * {
   text-align: center;
+}
+
+.svg-container {
+  position: relative;
+  display: grid;
+}
+
+.svg-illustration, .svg-line {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.svg-illustration {
+  z-index: 10;
+  /* position: absolute; */
+}
+
+.svg-line {
+  position: absolute;
+  z-index: 9;
+}
+
+.svg-line path {
+  animation: dashOffset 7s infinite linear;
+}
+
+@keyframes dashOffset {
+  0% {stroke-dashoffset: 0%;}
+  100% {stroke-dashoffset: 100%;}
 }
 
 @media screen and (max-height: 550px), screen and (max-width: 435px) {

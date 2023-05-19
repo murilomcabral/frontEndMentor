@@ -1,12 +1,11 @@
 const $fbValueList = document.querySelectorAll('.fb-value li')
+const arr = Array.from($fbValueList)
 
 const $rateState = document.querySelector('.rate-state')
 const $thankYouState = document.querySelector('.thank-you-state')
 
 const $showRated = document.querySelector('.rated')
 
-const arr = Array.from($fbValueList)
-console.log(arr)
 
 let pointsRated = 0
 
@@ -31,3 +30,15 @@ function thankYouState() {
     }
   })
 }
+
+// svg animation
+
+const linePath = document.querySelector('.svg-line path')
+const pathLen = linePath.getTotalLength()
+console.log(pathLen)
+linePath.style.cssText = `
+fill:none;
+stroke:#e6e6e6;
+stroke-width:1.1px;
+stroke-dasharray:${pathLen / 100}, 5.5, 0, 0;
+`

@@ -38,9 +38,7 @@ body::before {
   height: 100dvh;
   position: absolute;
 
-  /* background-image: url(design/desktop-design.jpg); */
-  /* background-image: url(design/desktop-thank-you-state.jpg); */
-  background-image: url(design/mobile-design.jpg);
+  background-image: url(design/desktop-design.jpg);
   background-position: center;
   background-repeat: no-repeat;
 

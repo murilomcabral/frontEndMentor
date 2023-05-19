@@ -29,19 +29,23 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Order summary component](https://murilomcabral.github.io/frontendmentor/008-interactive-rating-component-main/)
+- Live Site URL: [Interactive rating component](https://murilomcabral.github.io/frontendmentor/008-interactive-rating-component-main/)
 
 ### Built with
 
 - [VS Code](https://code.visualstudio.com/)
-- Semantic HTML5 markup
+- Javascript (for submit button and svg animation)
+- HTML5 markup
 - CSS custom properties
   - Desktop-first workflow
   - Grid
+  - Flex
+- Affinity Design (svg edit)
 
 ### What I learned
 
-- ?
+- I still need more planning before starting. Taking some time to plan first could've saved me some good time developing my css
+- Learned more about using grid and flex together
 
 ## Author
 

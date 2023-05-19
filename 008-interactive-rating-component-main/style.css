@@ -39,7 +39,8 @@ body::before {
   position: absolute;
 
   /* background-image: url(design/desktop-design.jpg); */
-  background-image: url(design/desktop-thank-you-state.jpg);
+  /* background-image: url(design/desktop-thank-you-state.jpg); */
+  background-image: url(design/mobile-design.jpg);
   background-position: center;
   background-repeat: no-repeat;
 
@@ -63,7 +64,7 @@ body::before {
 }
 
 .rate-state {
-  grid-template-rows: 2fr 3fr 2fr 1fr;
+  grid-template-rows: 1.8fr 3fr 2fr 1fr;
 }
 
 .thank-you-state {
@@ -85,12 +86,13 @@ body::before {
   font-size: var(--font-size);
 }
 
-.icon-star-container {
+.icon-star-container, .rate-state li {
   display: grid;
   place-items: center;
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  background-color: var(--dark-blue);
 }
 
 .rate-state h1 {
@@ -104,32 +106,27 @@ body::before {
   line-height: 1.5rem;
 }
 
+.rate-state p {
+  padding: 10px 0;
+}
+
 .thank-you-state p {
   padding: 0 5px;
 }
 
-.rate-state ol {
+.fb-value {
   width: 100%;
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 1dvw;
   padding: 10px;
+  gap: 10px;
 }
 
 .rate-state li {
   color: var(--medium-grey);
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
   font-weight: 700;
-}
-
-.icon-star-container, .rate-state li {
-  background-color: var(--dark-blue);
 }
 
 button[type="submit"] {
@@ -140,10 +137,10 @@ button[type="submit"] {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .2rem;
+  height: 45px;
 }
 
 /* active states */
-
 ol li:hover {
   cursor: pointer;
   background-color: var(--medium-grey);
@@ -165,6 +162,34 @@ li[checked] {
   text-align: center;
 }
 
-@media screen and (max-height: 620px), screen and (max-width: 745px) {
+@media screen and (max-height: 550px), screen and (max-width: 435px) {
+
+  .rate-state, .thank-you-state {
+    width: 330px;
+    max-width: 97dvw;
+  }
+
+  .rate-state {
+    grid-template-rows: 60px max-content max-content max-content;
+  }
+
+  .icon-star-container, .rate-state li {
+    width: 40px;
+    height: 40px;
+  }
+
+  .fb-value {
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+  .message-container {
+    align-self: center;
+  }
+
+  button[type="submit"] {
+    height: 40px;
+  }
+
   .attribution {inset: 10px 0 auto 0; backdrop-filter: blur(3px)}
 }

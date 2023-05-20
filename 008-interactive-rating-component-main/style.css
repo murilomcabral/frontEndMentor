@@ -48,6 +48,10 @@ body::before {
   display: none;
 }
 
+fieldset {
+  border: none;
+}
+
 .rate-state, .thank-you-state {
   display: grid;
   margin-top: 5px;
@@ -84,13 +88,14 @@ body::before {
   font-size: var(--font-size);
 }
 
-.icon-star-container, .rate-state li {
+.icon-star-container, .fb-value label {
   display: grid;
   place-items: center;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: var(--dark-blue);
+  color: var(--medium-grey);
 }
 
 .rate-state h1 {
@@ -122,9 +127,15 @@ body::before {
   gap: 10px;
 }
 
-.rate-state li {
+input[type="radio"] {
+  display: none;
+}
+
+.fb-value label {
   color: var(--medium-grey);
   font-weight: 700;
+  width: 50px;
+  height: 50px;
 }
 
 button[type="submit"] {
@@ -139,7 +150,7 @@ button[type="submit"] {
 }
 
 /* active states */
-ol li:hover {
+.fb-value label:hover {
   cursor: pointer;
   background-color: var(--medium-grey);
   color: var(--white);
@@ -151,7 +162,7 @@ button[type="submit"]:hover {
   cursor: pointer;
 }
 
-li[checked] {
+.fb-value input[type="radio"]:checked + label {
   color: var(--white);
   background-color: var(--orange);
 }
@@ -200,7 +211,7 @@ li[checked] {
     grid-template-rows: 60px max-content max-content max-content;
   }
 
-  .icon-star-container, .rate-state li {
+  .icon-star-container, label[name="rating"] {
     width: 40px;
     height: 40px;
   }

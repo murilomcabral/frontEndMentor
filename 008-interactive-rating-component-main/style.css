@@ -162,7 +162,13 @@ button[type="submit"]:hover {
   cursor: pointer;
 }
 
-.fb-value input[type="radio"]:checked + label {
+/* .fb-value label:has(~ input[type="radio"]:checked) {
+  color: var(--white);
+  background-color: var(--orange);
+} */
+
+/* rating points */
+.fb-value label:has(input[type="radio"]:checked) {
   color: var(--white);
   background-color: var(--orange);
 }
@@ -183,17 +189,12 @@ button[type="submit"]:hover {
 
 .svg-illustration {
   z-index: 10;
-  /* position: absolute; */
 }
 
 .svg-line {
   position: absolute;
   z-index: 9;
 }
-
-/* .svg-line path {
-  animation: dashOffset 7s infinite linear;
-} */
 
 @keyframes dashOffset {
   0% {stroke-dashoffset: 0%;}

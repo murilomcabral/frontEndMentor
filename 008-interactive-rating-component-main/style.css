@@ -180,9 +180,9 @@ li[checked] {
   z-index: 9;
 }
 
-.svg-line path {
+/* .svg-line path {
   animation: dashOffset 7s infinite linear;
-}
+} */
 
 @keyframes dashOffset {
   0% {stroke-dashoffset: 0%;}

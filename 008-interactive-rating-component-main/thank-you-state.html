@@ -54,6 +54,9 @@
     Coded by <a href="https://www.frontendmentor.io/profile/murilomcabral" target="_blank">Murilo Moraes Cabral</a>.
   </div>
   <script src="animate.js"></script>
-  <script src="form-handler.js"></script>
+  <script>
+    const nameDisplay = document.querySelector('.rated')
+    nameDisplay.textContent = localStorage.getItem('rating')
+  </script>
 </body>
 </html>

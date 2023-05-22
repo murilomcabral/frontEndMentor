@@ -14,7 +14,7 @@
 <body>
 
   <main>
-    <form action="" id="rateForm" onsubmit="sendData(event)">
+    <form id="rateForm" onsubmit="sendData(event)">
       <fieldset class="rate-state">
         <legend style="display:none;">How did we do?</legend>
         <div class="icon-star-container"><img src="images/icon-star.svg" alt=""></div>
@@ -23,7 +23,7 @@
             <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
           </div>
           <div class="fb-value">
-            <label for="rating1"><input type="radio" name="rating" id="rating1" value="1">1</label>
+            <label for="rating1"><input type="radio" name="rating" id="rating1" value="1" required>1</label>
             <label for="rating2"><input type="radio" name="rating" id="rating2" value="2">2</label>
             <label for="rating3"><input type="radio" name="rating" id="rating3" value="3">3</label>
             <label for="rating4"><input type="radio" name="rating" id="rating4" value="4">4</label>
@@ -39,6 +39,6 @@
     Coded by <a href="https://www.frontendmentor.io/profile/murilomcabral" target="_blank">Murilo Moraes Cabral</a>.
   </div>
 
-  <script src="script.js"></script>
+  <script src="form.js"></script>
 </body>
 </html>

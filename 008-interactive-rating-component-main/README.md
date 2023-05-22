@@ -35,6 +35,7 @@ Users should be able to:
 
 - [VS Code](https://code.visualstudio.com/)
 - Javascript (for submit button and svg animation)
+  - Localstorage
 - HTML5 markup
 - CSS custom properties
   - Desktop-first workflow
@@ -46,6 +47,7 @@ Users should be able to:
 
 - I still need more planning before starting. Taking some time to plan first could've saved me some good time developing my css
 - Learned more about using grid and flex together
+- Better form structuring
 
 ## Author
 

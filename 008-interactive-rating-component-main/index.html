@@ -13,15 +13,15 @@
 </head>
 <body>
 
-  <main>
+  <main class="rate-state">
+    <div class="icon-star-container"><img src="images/icon-star.svg" alt=""></div>
+    <div class="message-container">
+      <h1>How did we do?</h1>
+      <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+    </div>
     <form id="rateForm" onsubmit="sendData(event)">
-      <fieldset class="rate-state">
+      <fieldset>
         <legend style="display:none;">How did we do?</legend>
-        <div class="icon-star-container"><img src="images/icon-star.svg" alt=""></div>
-          <div class="message-container">
-            <h1>How did we do?</h1>
-            <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
-          </div>
           <div class="fb-value">
             <label for="rating1"><input type="radio" name="rating" id="rating1" value="1" required>1</label>
             <label for="rating2"><input type="radio" name="rating" id="rating2" value="2">2</label>
@@ -29,9 +29,9 @@
             <label for="rating4"><input type="radio" name="rating" id="rating4" value="4">4</label>
             <label for="rating5"><input type="radio" name="rating" id="rating5" value="5">5</label>
           </div>
-          <button type="submit">Submit</button>
       </fieldset>
     </form>
+    <button type="submit">Submit</button>
   </main>  
 
   <footer class="attribution">

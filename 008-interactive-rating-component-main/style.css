@@ -121,10 +121,9 @@ fieldset {
   width: 100%;
   list-style: none;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  padding: 10px;
-  gap: 10px;
+  justify-content: center;
+  gap:15px;
 }
 
 input[type="radio"] {
@@ -139,6 +138,7 @@ input[type="radio"] {
 }
 
 button[type="submit"] {
+  width: 100%;
   background-color: var(--orange);
   color: var(--white);
   border: none;
@@ -161,11 +161,6 @@ button[type="submit"]:hover {
   color: var(--orange);
   cursor: pointer;
 }
-
-/* .fb-value label:has(~ input[type="radio"]:checked) {
-  color: var(--white);
-  background-color: var(--orange);
-} */
 
 /* rating points */
 .fb-value label:has(input[type="radio"]:checked) {
@@ -218,8 +213,8 @@ button[type="submit"]:hover {
   }
 
   .fb-value {
-    justify-content: center;
     padding-bottom: 20px;
+    gap:5px;
   }
 
   .message-container {

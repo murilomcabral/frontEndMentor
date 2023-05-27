@@ -26,26 +26,23 @@
 }
 
 body {
-  min-height: 100dvh;
-  display: grid;
-  place-items: center;
   background-color: var(--very-dark-blue);
+  display: grid;
+  min-height: 100dvh;
+  place-items: center;
 }
 
 body::before {
-  content: '';
-  width: 100%;
-  height: 100dvh;
-  position: absolute;
-
-  background-image: url(design/desktop-design.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-
-  opacity: .3;
-  z-index: 1;
-
-  display: none;
+ background-image: url(design/desktop-design.jpg);
+ background-position: center;
+ background-repeat: no-repeat;
+ content: '';
+ display: none;
+ height: 100dvh;
+ opacity: .3;
+ position: absolute;
+ width: 100%;
+ z-index: 1;
 }
 
 fieldset {
@@ -53,20 +50,20 @@ fieldset {
 }
 
 .rate-state, .thank-you-state {
-  display: grid;
-  margin-top: 5px;
   background-image: linear-gradient(to bottom, var(--dark-blue) -50%, var(--very-dark-blue) 150%);
-  width: 410px;
+  border-radius: 30px;
+  color: var(--white);
+  display: grid;
+  font-family: var(--font-overpass);
+  margin-top: 5px;
   max-width: 97dvw;
   min-height: 415px;
-  border-radius: 30px;
-  font-family: var(--font-overpass);
-  color: var(--white);
   padding: 30px;
+  width: 410px;  
 }
 
 .rate-state {
-  grid-template-rows: 1.8fr 3fr 2fr 1fr;
+  grid-template-rows: 1.8fr 3fr 3fr;
 }
 
 .thank-you-state {
@@ -81,21 +78,21 @@ fieldset {
 }
 
 .thank-you-state div:nth-last-of-type(2) {
-  color: var(--orange);
-  padding: 5px 20px;
   background-color: var(--dark-blue);
   border-radius: 20px;
+  color: var(--orange);
   font-size: var(--font-size);
+  padding: 5px 20px;
 }
 
 .icon-star-container, .fb-value label {
+  background-color: var(--dark-blue);
+  border-radius: 50%;
+  color: var(--medium-grey);
   display: grid;
+  height: 50px;
   place-items: center;
   width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: var(--dark-blue);
-  color: var(--medium-grey);
 }
 
 .rate-state h1 {
@@ -104,8 +101,8 @@ fieldset {
 }
 
 .rate-state p, .thank-you-state p {
-  font-size: var(--font-size);
   color: var(--light-grey);
+  font-size: var(--font-size);
   line-height: 1.5rem;
 }
 
@@ -117,13 +114,22 @@ fieldset {
   padding: 0 5px;
 }
 
+#rateForm {
+  display: grid;
+  place-items: center;
+}
+
+#rateForm button {
+  place-self: end;
+}
+
 .fb-value {
-  width: 100%;
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap:15px;
+  justify-content: center;
+  list-style: none;
+  width: 100%;
 }
 
 input[type="radio"] {
@@ -133,26 +139,26 @@ input[type="radio"] {
 .fb-value label {
   color: var(--medium-grey);
   font-weight: 700;
-  width: 50px;
   height: 50px;
+  width: 50px;
 }
 
 button[type="submit"] {
-  width: 100%;
   background-color: var(--orange);
-  color: var(--white);
   border: none;
   border-radius: 22.5px;
+  color: var(--white);
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: .2rem;
   height: 45px;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  width: 100%;  
 }
 
 /* active states */
 .fb-value label:hover {
-  cursor: pointer;
   background-color: var(--medium-grey);
+  cursor: pointer;
   color: var(--white);
 }
 
@@ -164,8 +170,8 @@ button[type="submit"]:hover {
 
 /* rating points */
 .fb-value label:has(input[type="radio"]:checked) {
-  color: var(--white);
   background-color: var(--orange);
+  color: var(--white);
 }
 
 .thank-you-state * {
@@ -173,13 +179,13 @@ button[type="submit"]:hover {
 }
 
 .svg-container {
-  position: relative;
   display: grid;
+  position: relative;
 }
 
 .svg-illustration, .svg-line {
-  max-width: 90%;
   max-height: 90%;
+  max-width: 90%;
 }
 
 .svg-illustration {
@@ -199,8 +205,8 @@ button[type="submit"]:hover {
 @media screen and (max-height: 550px), screen and (max-width: 435px) {
 
   .rate-state, .thank-you-state {
-    width: 330px;
     max-width: 97dvw;
+    width: 330px;
   }
 
   .rate-state {
@@ -208,8 +214,8 @@ button[type="submit"]:hover {
   }
 
   .icon-star-container, label[name="rating"] {
-    width: 40px;
     height: 40px;
+    width: 40px;
   }
 
   .fb-value {

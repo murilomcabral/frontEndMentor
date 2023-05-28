@@ -34,12 +34,11 @@ Users should be able to:
 - HTML5 markup
 - CSS custom properties
   - Mobile-first workflow
-  - Grid
-  - Flex
+  - Flexbox
 
 ### What I learned
 
-- ?
+- Now I know and understant `flex-basis` , `flex-grow` and `flex-shrink`.
 
 ## Author
 

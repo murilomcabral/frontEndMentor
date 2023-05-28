@@ -41,67 +41,93 @@ body::before {
   background-position: center;
   background-repeat: no-repeat;
   content: '';
-  display: none;
   opacity: .2;
   position: absolute;
   z-index: 1;
+  display: none;
 }
+
+/* ====================================== */
 
 .card {
   width: 327px;
-  max-width: 90dvw;
-  min-height: 780px;
-  background: var(--dark-desaturated-blue);
-  overflow: hidden;
+  max-width: 95dvw;
+  min-height: 779px;
   border-radius: 8px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  font-family: var(--ff-inter);
+  background: var(--dark-desaturated-blue)
 }
 
 .card picture {
-  width: fit-content;
-  height: 240px;
+  position: relative;
+  flex-grow: 1;
+  flex-basis: 240px;
   overflow: hidden;
   background: var(--soft-violet);
-  place-items: center;
 }
 
 .card picture img {
-  display: block;
-  width: 100%;
-  height: inherit;
-  object-fit: cover;
-  place-self: center;
+  height: 101%;
   mix-blend-mode: multiply;
   opacity: .8;
+  position: absolute;
+  inset: 50% 0 0 50%;
+  transform: translate(-50%, -50%);
 }
 
 .card section {
+  flex-grow: 1;
+  flex-basis: 539px;
+  font-family: var(--ff-inter);
+  padding: 12px;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  text-align: center;
 }
 
 .card section > * {
+  color: var(--white);
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 50%;
+}
+
+.card section > * > * {
+  flex-grow: 1;
+  padding: 12px;
+  justify-self: center;
+  align-self: center;
+}
+
+.card section .about > * {
+  flex-basis: 50%;
+}
+
+.card section .about p {
+  font-size: var(--p-font-size);
+  line-height: 1.5rem;
+  color: var(--slightly-transp-white-mp);
+}
+
+.card section .stats > * {
+  flex-basis: calc(100% / 3);
   display: flex;
   flex-direction: column;
 }
 
-.card section > * > * {
-  padding: 16px;
+.card section .stats span {
+  color: var(--slightly-transp-white-sh);
 }
 
-.card h1, .card .stats h2 {
-  color: var(--white);
+.card section h1 {
+  font-size: 1.75rem;
 }
 
-.card h1 {
-  font-size: 1.7rem;
-}
-
-.card h1 span {
+.card section h1 span {
   color: var(--soft-violet);
 }
 
@@ -111,17 +137,6 @@ body::before {
 
 .card .stats span {
   font-family: var(--ff-lexend-deca);
-  color: var(--slightly-transp-white-sh);
-  font-size: 13px;
-  font-weight: 400;
-}
-
-
-
-.card p {
-  color: var(--slightly-transp-white-mp);
-  font-size: var(--p-font-size);
-  line-height: 1.5rem;
 }
 
 @media screen and (min-width: 601px) {
@@ -138,43 +153,31 @@ body::before {
   }
 
   .card picture {
-    max-width: fit-content;
-    height: auto;
-    flex-basis: 100%;
+    flex-basis: 540px;
   }
 
-  .card picture img {
-    min-height: 100%;
+  .card section {
+    flex-basis: 570px;
+    padding: 30px;
+    text-align: left;
   }
   
-  .card section {
-    width: 50%;
-    min-height: 230px;
-    align-items: start;
-    text-align: left;
-    flex-basis: 100%;
-    padding: 50px;
+  .card section > * {
+    padding: 20px;
   }
 
-  .card h1 {
-    font-size: 2.2rem;
+  .card section h1 {
+    font-size: 2.25rem;
   }
 
-  .card section .about > * {
-    flex-basis: 100%;
+  .card .about {
+    flex-basis: 268px;
   }
-
-  .card section > *{
-    flex-basis: 100%;
-    align-items: center;
-  }
-
+  
   .card .stats {
-    width: 100%;
-    height: auto;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 30px;
+    flex-basis: 118px;
   }
 
 }

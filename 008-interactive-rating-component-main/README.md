@@ -40,7 +40,7 @@ Users should be able to:
 - CSS custom properties
   - Desktop-first workflow
   - Grid
-  - Flex
+  - Flexbox
 - Affinity Design (svg edit)
 
 ### What I learned

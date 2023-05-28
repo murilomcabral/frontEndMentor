@@ -113,12 +113,6 @@ body::before {
   color: var(--slightly-transp-white-mp);
 }
 
-.card section .stats > * {
-  flex-basis: calc(100% / 3);
-  display: flex;
-  flex-direction: column;
-}
-
 .card section .stats span {
   color: var(--slightly-transp-white-sh);
 }

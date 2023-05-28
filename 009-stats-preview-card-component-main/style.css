@@ -35,47 +35,58 @@ body {
 }
 
 body::before {
- background-image: url(design/desktop-design.jpg);
- background-position: center;
- background-repeat: no-repeat;
- content: '';
- display: none;
- height: 100dvh;
- opacity: .2;
- position: absolute;
- width: 100%;
- z-index: 1;
+  width: 100%;
+  height: 100dvh;
+  background-image: url(design/mobile-design.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  content: '';
+  display: none;
+  opacity: .2;
+  position: absolute;
+  z-index: 1;
 }
 
 .card {
-  background: var(--dark-desaturated-blue);
-  overflow: hidden;
   width: 327px;
   max-width: 90dvw;
   min-height: 780px;
+  background: var(--dark-desaturated-blue);
+  overflow: hidden;
   border-radius: 8px;
-  display: grid;
-  grid-template-rows: 240px auto;
+  display: flex;
+  flex-direction: column;
   font-family: var(--ff-inter);
 }
 
-.card img {
-  height: 100%;
-  object-fit: contain;
+.card picture {
+  width: fit-content;
+  height: 240px;
   overflow: hidden;
+  background: var(--soft-violet);
+  place-items: center;
+}
+
+.card picture img {
+  display: block;
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
   place-self: center;
+  mix-blend-mode: multiply;
+  opacity: .8;
 }
 
 .card section {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   text-align: center;
 }
 
 .card section > * {
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .card section > * > * {
@@ -94,13 +105,18 @@ body::before {
   color: var(--soft-violet);
 }
 
+.card .stats {
+  text-transform: uppercase;
+}
+
 .card .stats span {
   font-family: var(--ff-lexend-deca);
-  text-transform: uppercase;
   color: var(--slightly-transp-white-sh);
   font-size: 13px;
   font-weight: 400;
 }
+
+
 
 .card p {
   color: var(--slightly-transp-white-mp);
@@ -108,6 +124,57 @@ body::before {
   line-height: 1.5rem;
 }
 
-@media screen and (min-height: 651px), screen and (min-width: 501px) {
+@media screen and (min-width: 601px) {
   .attribution {inset: auto auto 5px 5px}
+
+  body::before {
+    background-image: url(design/desktop-design.jpg);
+  }
+
+  .card {
+    width: 1110px;
+    min-height: 446px;
+    flex-direction: row-reverse;
+  }
+
+  .card picture {
+    max-width: fit-content;
+    height: auto;
+    flex-basis: 100%;
+  }
+
+  .card picture img {
+    min-height: 100%;
+  }
+  
+  .card section {
+    width: 50%;
+    min-height: 230px;
+    align-items: start;
+    text-align: left;
+    flex-basis: 100%;
+    padding: 50px;
+  }
+
+  .card h1 {
+    font-size: 2.2rem;
+  }
+
+  .card section .about > * {
+    flex-basis: 100%;
+  }
+
+  .card section > *{
+    flex-basis: 100%;
+    align-items: center;
+  }
+
+  .card .stats {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 30px;
+  }
+
 }

@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+@import url('');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+.attribution {position: fixed; backdrop-filter: blur(3px); font-size: 11px; text-align: center; padding: 3px;color: var(--attrb-color);inset: 5px 0 auto 0}
+.attribution a { color: var(--attrb-color);}
+
+:root {
+  --attrb-color: hsla(0, 50%, 100%, .8);
+
+/* primary colors */
+  --very-dark-blue: hsl(233, 47%, 7%);
+  --dark-desaturated-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+  
+/* neutral colors */
+  --white: hsl(0 0% 100%);
+  --slightly-transp-white-mp: hsla(0 0% 100% / 0.75);
+  --slightly-transp-white-sh: hsla(0 0% 100% / 0.6);
+
+  /* font */
+  --ff-inter: 'Inter', sans-serif;
+  --ff-lexend-deca: 'Lexend Deca', sans-serif;
+  --p-font-size: 15px;
+}
+
+body {
+  background-color: var(--very-dark-blue);
+  display: grid;
+  min-height: 100dvh;
+  place-items: center;
+  padding: 20px 0;
+}
+
+body::before {
+  width: 100%;
+  height: 100dvh;
+  background-image: url(design/mobile-design.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  content: '';
+  opacity: .2;
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+
+/* ====================================== */
+
+
+
+@media screen and (min-width: 601px) {
+  .attribution {inset: auto auto 5px 5px}
+
+  body::before {
+    background-image: url(design/desktop-design.jpg);
+  }
+
+}
